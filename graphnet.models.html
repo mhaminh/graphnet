@@ -16,6 +16,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -122,11 +123,11 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.coarsening.Coarsening">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.coarsening.</span></span><span class="sig-name descname"><span class="pre">Coarsening</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reduce</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'avg'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transfer_attributes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/graphnet/models/coarsening.html#Coarsening"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.coarsening.Coarsening" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code>, <a class="reference internal" href="graphnet.utilities.html#graphnet.utilities.logging.LoggerMixin" title="graphnet.utilities.logging.LoggerMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoggerMixin</span></code></a></p>
 <p>Base class for coarsening operations.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.models.coarsening.Coarsening.__call__">
-<span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Data</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Data</span></span></span><a class="reference internal" href="_modules/graphnet/models/coarsening.html#Coarsening.__call__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.coarsening.Coarsening.__call__" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Data</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Batch</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Data</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Batch</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/graphnet/models/coarsening.html#Coarsening.__call__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.coarsening.Coarsening.__call__" title="Permalink to this definition"></a></dt>
 <dd><p>Coarsening operation.</p>
 </dd></dl>
 
@@ -191,6 +192,24 @@ This method can be overwritten for bespoke coarsening operations.</p>
 <dd><p>Coarsening to DOM-level.</p>
 </dd></dl>
 
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="graphnet.models.coarsening.unbatch_edge_index">
+<span class="sig-prename descclassname"><span class="pre">graphnet.models.coarsening.</span></span><span class="sig-name descname"><span class="pre">unbatch_edge_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/graphnet/models/coarsening.html#unbatch_edge_index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.coarsening.unbatch_edge_index" title="Permalink to this definition"></a></dt>
+<dd><p>Splits the <code class="xref py py-obj docutils literal notranslate"><span class="pre">edge_index</span></code> according to a <code class="xref py py-obj docutils literal notranslate"><span class="pre">batch</span></code> vector.
+:param edge_index: The edge_index tensor. Must be ordered.
+:type edge_index: Tensor
+:param batch: The batch vector</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\mathbf{b} \in {\{ 0, \ldots, B-1\}}^N\)</span>, which assigns each
+node to a specific example. Must be ordered.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[Tensor]</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -400,7 +419,10 @@ the scheduler will only be updated when its optimizer is being used.</p>
 <p class="admonition-title">Note</p>
 <p>Some things to know:</p>
 <ul class="simple">
-<li><p>Lightning calls <code class="docutils literal notranslate"><span class="pre">.backward()</span></code> and <code class="docutils literal notranslate"><span class="pre">.step()</span></code> on each optimizer and learning rate scheduler as needed.</p></li>
+<li><p>Lightning calls <code class="docutils literal notranslate"><span class="pre">.backward()</span></code> and <code class="docutils literal notranslate"><span class="pre">.step()</span></code> on each optimizer as needed.</p></li>
+<li><p>If learning rate scheduler is specified in <code class="docutils literal notranslate"><span class="pre">configure_optimizers()</span></code> with key
+<code class="docutils literal notranslate"><span class="pre">&quot;interval&quot;</span></code> (default “epoch”) in the scheduler configuration, Lightning will call
+the scheduler’s <code class="docutils literal notranslate"><span class="pre">.step()</span></code> method automatically in case of automatic optimization.</p></li>
 <li><p>If you use 16-bit precision (<code class="docutils literal notranslate"><span class="pre">precision=16</span></code>), Lightning will automatically handle the optimizers.</p></li>
 <li><p>If you use multiple optimizers, <a class="reference internal" href="#graphnet.models.model.Model.training_step" title="graphnet.models.model.Model.training_step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">training_step()</span></code></a> will have an additional <code class="docutils literal notranslate"><span class="pre">optimizer_idx</span></code> parameter.</p></li>
 <li><p>If you use <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.optim.LBFGS</span></code>, Lightning handles the closure function automatically for you.</p></li>
@@ -492,7 +514,7 @@ the progress bar or logger.</p>
 <li><p><strong>batch_idx</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Integer displaying index of this batch</p></li>
 <li><p><strong>optimizer_idx</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – When using multiple optimizers, this argument will also be present.</p></li>
 <li><p><strong>hiddens</strong> (<code class="docutils literal notranslate"><span class="pre">Any</span></code>) – Passed in if
-<a href="#id1"><span class="problematic" id="id2">:paramref:`~pytorch_lightning.core.lightning.LightningModule.truncated_bptt_steps`</span></a> &gt; 0.</p></li>
+<a href="#id1"><span class="problematic" id="id2">:paramref:`~pytorch_lightning.core.module.LightningModule.truncated_bptt_steps`</span></a> &gt; 0.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -673,6 +695,27 @@ features in x.</p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="graphnet.models.utils.knn_graph_batch">
+<span class="sig-prename descclassname"><span class="pre">graphnet.models.utils.</span></span><span class="sig-name descname"><span class="pre">knn_graph_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/graphnet/models/utils.html#knn_graph_batch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.utils.knn_graph_batch" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the k-nearest-neighbours with an individual k for each event in batch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>batch</strong> (<em>Batch</em>) – A torch_geometric.data.Batch of events</p></li>
+<li><p><strong>k</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A list of k’s</p></li>
+<li><p><strong>columns</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The columns of Data.x used for computing the distances. Eg. Data.x[:,[0,1,2]]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns the same batch of events, but with updated edges.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Batch</p>
 </dd>
 </dl>
 </dd></dl>
