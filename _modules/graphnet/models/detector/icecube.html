@@ -51,9 +51,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../index.html">Module code</a> &raquo;</li>
-      <li>graphnet.models.detector.icecube</li>
+      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">graphnet.models.detector.icecube</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -63,10 +63,12 @@
            <div itemprop="articleBody">
              
   <h1>Source code for graphnet.models.detector.icecube</h1><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">torch</span>
+<span></span><span class="sd">&quot;&quot;&quot;IceCube-specific `Detector` class(es).&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">from</span> <span class="nn">torch_geometric.data</span> <span class="kn">import</span> <span class="n">Data</span>
 
-<span class="kn">from</span> <span class="nn">graphnet.components.pool</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="kn">from</span> <span class="nn">graphnet.models.components.pool</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">group_pulses_to_dom</span><span class="p">,</span>
     <span class="n">group_pulses_to_pmt</span><span class="p">,</span>
     <span class="n">sum_pool_and_distribute</span><span class="p">,</span>
@@ -82,15 +84,45 @@
     <span class="n">features</span> <span class="o">=</span> <span class="n">FEATURES</span><span class="o">.</span><span class="n">ICECUBE86</span>
 
 <div class="viewcode-block" id="IceCube86._forward"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCube86._forward">[docs]</a>    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Data</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;Ingests data, builds graph (connectivity/adjacency), and preprocesses features.</span>
+        <span class="sd">&quot;&quot;&quot;Ingest data, build graph, and preprocess features.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            data (Data): Input graph data.</span>
+<span class="sd">            data: Input graph data.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            Data: Connected and preprocessed graph data.</span>
+<span class="sd">            Connected and preprocessed graph data.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Check(s)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_features</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
+        <span class="c1"># Preprocessing</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">/=</span> <span class="mf">500.0</span>  <span class="c1"># dom_x</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/=</span> <span class="mf">500.0</span>  <span class="c1"># dom_y</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">/=</span> <span class="mf">500.0</span>  <span class="c1"># dom_z</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">-</span> <span class="mf">1.0e04</span><span class="p">)</span> <span class="o">/</span> <span class="mf">3.0e4</span>  <span class="c1"># dom_time</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">/</span> <span class="mf">3.0</span>  <span class="c1"># charge</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">-=</span> <span class="mf">1.25</span>  <span class="c1"># rde</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">/=</span> <span class="mf">0.25</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">6</span><span class="p">]</span> <span class="o">/=</span> <span class="mf">0.05</span>  <span class="c1"># pmt_area</span>
+
+        <span class="k">return</span> <span class="n">data</span></div></div>
+
+
+<div class="viewcode-block" id="IceCubeDeepCore"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeDeepCore">[docs]</a><span class="k">class</span> <span class="nc">IceCubeDeepCore</span><span class="p">(</span><span class="n">IceCube86</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;`Detector` class for IceCube-DeepCore.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Implementing abstract class attribute</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">FEATURES</span><span class="o">.</span><span class="n">DEEPCORE</span>
+
+<div class="viewcode-block" id="IceCubeDeepCore._forward"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeDeepCore._forward">[docs]</a>    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Data</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Ingest data, build graph, and preprocess features.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: Input graph data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Connected and preprocessed graph data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="c1"># Check(s)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_features</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
@@ -110,10 +142,6 @@
         <span class="k">return</span> <span class="n">data</span></div></div>
 
 
-<div class="viewcode-block" id="IceCubeDeepCore"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeDeepCore">[docs]</a><span class="k">class</span> <span class="nc">IceCubeDeepCore</span><span class="p">(</span><span class="n">IceCube86</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;`Detector` class for IceCube-DeepCore.&quot;&quot;&quot;</span></div>
-
-
 <div class="viewcode-block" id="IceCubeUpgrade"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeUpgrade">[docs]</a><span class="k">class</span> <span class="nc">IceCubeUpgrade</span><span class="p">(</span><span class="n">IceCubeDeepCore</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;`Detector` class for IceCube-Upgrade.&quot;&quot;&quot;</span>
 
@@ -121,15 +149,14 @@
     <span class="n">features</span> <span class="o">=</span> <span class="n">FEATURES</span><span class="o">.</span><span class="n">UPGRADE</span>
 
 <div class="viewcode-block" id="IceCubeUpgrade._forward"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeUpgrade._forward">[docs]</a>    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Data</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;Ingests data, builds graph (connectivity/adjacency), and preprocesses features.</span>
+        <span class="sd">&quot;&quot;&quot;Ingest data, build graph, and preprocess features.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            data (Data): Input graph data.</span>
+<span class="sd">            data: Input graph data.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            Data: Connected and preprocessed graph data.</span>
+<span class="sd">            Connected and preprocessed graph data.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="c1"># Check(s)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_features</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
@@ -162,19 +189,19 @@
     <span class="n">features</span> <span class="o">=</span> <span class="n">FEATURES</span><span class="o">.</span><span class="n">UPGRADE</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">nb_outputs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">nb_outputs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return number of output features.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nb_inputs</span> <span class="o">+</span> <span class="mi">3</span>
 
 <div class="viewcode-block" id="IceCubeUpgrade_V2._forward"><a class="viewcode-back" href="../../../../graphnet.models.detector.html#graphnet.models.detector.icecube.IceCubeUpgrade_V2._forward">[docs]</a>    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Data</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;Ingests data, builds graph (connectivity/adjacency), and preprocesses features.</span>
+        <span class="sd">&quot;&quot;&quot;Ingest data, build graph, and preprocess features.</span>
 
 <span class="sd">        Args:</span>
-<span class="sd">            data (Data): Input graph data.</span>
+<span class="sd">            data: Input graph data.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            Data: Connected and preprocessed graph data.</span>
+<span class="sd">            Connected and preprocessed graph data.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-
         <span class="c1"># Check(s)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_features</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 

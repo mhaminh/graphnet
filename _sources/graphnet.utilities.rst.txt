@@ -1,8 +1,24 @@
 graphnet.utilities package
 ==========================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   graphnet.utilities.config
+
 Submodules
 ----------
+
+graphnet.utilities.decorators module
+------------------------------------
+
+.. automodule:: graphnet.utilities.decorators
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 graphnet.utilities.filesys module
 ---------------------------------

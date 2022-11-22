@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>graphnet.data.extractors.utilities &mdash; graphnet  documentation</title>
+  <title>graphnet.models.task.classification &mdash; graphnet  documentation</title>
       <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -51,9 +51,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../index.html">Module code</a> &raquo;</li>
-      <li>graphnet.data.extractors.utilities</li>
+      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">graphnet.models.task.classification</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -62,21 +62,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for graphnet.data.extractors.utilities</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="frame_is_montecarlo"><a class="viewcode-back" href="../../../../graphnet.data.extractors.html#graphnet.data.extractors.utilities.frame_is_montecarlo">[docs]</a><span></span><span class="k">def</span> <span class="nf">frame_is_montecarlo</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;MCInIcePrimary&quot;</span> <span class="ow">in</span> <span class="n">frame</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="s2">&quot;I3MCTree&quot;</span> <span class="ow">in</span> <span class="n">frame</span><span class="p">)</span></div>
+  <h1>Source code for graphnet.models.task.classification</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Classification-specific `Model` class(es).&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">Tensor</span>
+
+<span class="kn">from</span> <span class="nn">graphnet.models.task</span> <span class="kn">import</span> <span class="n">Task</span>
 
 
-<div class="viewcode-block" id="frame_is_noise"><a class="viewcode-back" href="../../../../graphnet.data.extractors.html#graphnet.data.extractors.utilities.frame_is_noise">[docs]</a><span class="k">def</span> <span class="nf">frame_is_noise</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">frame</span><span class="p">[</span><span class="s2">&quot;I3MCTree&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">energy</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">except</span><span class="p">:</span>  <span class="c1"># noqa: E722</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">frame</span><span class="p">[</span><span class="s2">&quot;MCInIcePrimary&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">energy</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">except</span><span class="p">:</span>  <span class="c1"># noqa: E722</span>
-            <span class="k">return</span> <span class="kc">True</span></div>
+<div class="viewcode-block" id="BinaryClassificationTask"><a class="viewcode-back" href="../../../../graphnet.models.task.html#graphnet.models.task.classification.BinaryClassificationTask">[docs]</a><span class="k">class</span> <span class="nc">BinaryClassificationTask</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Performs binary classification.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Requires one feature, logit for being signal class.</span>
+    <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+        <span class="c1"># transform probability of being muon</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BinaryClassificationTaskLogits"><a class="viewcode-back" href="../../../../graphnet.models.task.html#graphnet.models.task.classification.BinaryClassificationTaskLogits">[docs]</a><span class="k">class</span> <span class="nc">BinaryClassificationTaskLogits</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Performs binary classification form logits.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Requires one feature, logit for being signal class.</span>
+    <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span></div>
 </pre></div>
 
            </div>
