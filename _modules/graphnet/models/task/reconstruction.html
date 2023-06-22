@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -329,6 +328,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs azimuthal angle and associated kappa (1/var)."""</span>
 
     <span class="c1"># Requires two features: untransformed points in (x,y)-space.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"azimuth"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"azimuth_pred"</span><span class="p">,</span> <span class="s2">"azimuth_kappa"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">2</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -345,6 +346,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs azimuthal angle."""</span>
 
     <span class="c1"># Requires two features: untransformed points in (x,y)-space.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"azimuth"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"azimuth_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">2</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -363,6 +366,15 @@
 <span class="w">    </span><span class="sd">"""Reconstructs direction with kappa from the 3D-vMF distribution."""</span>
 
     <span class="c1"># Requires three features: untransformed points in (x,y,z)-space.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">"direction"</span>
+    <span class="p">]</span>  <span class="c1"># contains dir_x, dir_y, dir_z see https://github.com/graphnet-team/graphnet/blob/95309556cfd46a4046bc4bd7609888aab649e295/src/graphnet/training/labels.py#L29</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">"dir_x_pred"</span><span class="p">,</span>
+        <span class="s2">"dir_y_pred"</span><span class="p">,</span>
+        <span class="s2">"dir_z_pred"</span><span class="p">,</span>
+        <span class="s2">"direction_kappa"</span><span class="p">,</span>
+    <span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">3</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -378,6 +390,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs zenith angle."""</span>
 
     <span class="c1"># Requires two features: zenith angle itself.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"zenith"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"zenith_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -389,6 +403,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs zenith angle and associated kappa (1/var)."""</span>
 
     <span class="c1"># Requires one feature in addition to `ZenithReconstruction`: kappa (unceratinty; 1/variance).</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"zenith"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"zenith_pred"</span><span class="p">,</span> <span class="s2">"zenith_kappa"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">2</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -402,6 +418,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs energy using stable method."""</span>
 
     <span class="c1"># Requires one feature: untransformed energy</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -414,6 +432,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs energy."""</span>
 
     <span class="c1"># Requires one feature: untransformed energy</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -425,6 +445,8 @@
 <span class="w">    </span><span class="sd">"""Reconstructs energy and associated uncertainty (log(var))."""</span>
 
     <span class="c1"># Requires one feature in addition to `EnergyReconstruction`: log-variance (uncertainty).</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"energy_pred"</span><span class="p">,</span> <span class="s2">"energy_sigma"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">2</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -439,10 +461,16 @@
 <span class="w">    </span><span class="sd">"""Reconstructs vertex position and time."""</span>
 
     <span class="c1"># Requires four features, x, y, z, and t.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"vertex"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">"position_x_pred"</span><span class="p">,</span>
+        <span class="s2">"position_y_pred"</span><span class="p">,</span>
+        <span class="s2">"position_z_pred"</span><span class="p">,</span>
+        <span class="s2">"interaction_time_pred"</span><span class="p">,</span>
+    <span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">4</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
-
         <span class="c1"># Scale xyz to roughly the right order of magnitude, leave time</span>
         <span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e2</span>
         <span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e2</span>
@@ -455,10 +483,15 @@
 <span class="w">    </span><span class="sd">"""Reconstructs vertex position."""</span>
 
     <span class="c1"># Requires three features, x, y, and z.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"position"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">"position_x_pred"</span><span class="p">,</span>
+        <span class="s2">"position_y_pred"</span><span class="p">,</span>
+        <span class="s2">"position_z_pred"</span><span class="p">,</span>
+    <span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">3</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
-
         <span class="c1"># Scale to roughly the right order of magnitude</span>
         <span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e2</span>
         <span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e2</span>
@@ -471,10 +504,11 @@
 <span class="w">    </span><span class="sd">"""Reconstructs time."""</span>
 
     <span class="c1"># Requires one feature, time.</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"interaction_time"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"interaction_time_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
-
         <span class="c1"># Leave as it is</span>
         <span class="k">return</span> <span class="n">x</span></div>
 
@@ -482,10 +516,12 @@
 <div class="viewcode-block" id="InelasticityReconstruction"><a class="viewcode-back" href="../../../../api/graphnet.models.task.reconstruction.html#graphnet.models.task.reconstruction.InelasticityReconstruction">[docs]</a><span class="k">class</span> <span class="nc">InelasticityReconstruction</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Reconstructs interaction inelasticity.</span>
 
-<span class="sd">    That is, tracks vs. hadronic energy.</span>
+<span class="sd">    That is, 1-(track energy / hadronic energy).</span>
 <span class="sd">    """</span>
 
     <span class="c1"># Requires one features: inelasticity itself</span>
+    <span class="n">default_target_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"inelasticity"</span><span class="p">]</span>
+    <span class="n">default_prediction_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"inelasticity_pred"</span><span class="p">]</span>
     <span class="n">nb_inputs</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="k">def</span> <span class="nf">_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
@@ -515,7 +551,7 @@
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

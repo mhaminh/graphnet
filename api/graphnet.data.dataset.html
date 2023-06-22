@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
 
@@ -620,7 +619,7 @@ events ~ event_no % 5 &gt; 0”</cite>).</p></li>
 <dd><p>Construct <cite>Dataset</cite> instance from <cite>source</cite> configuration.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#graphnet.data.dataset.Dataset" title="graphnet.data.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ConcatDataset</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <a class="reference internal" href="#graphnet.data.dataset.Dataset" title="graphnet.data.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></a>], <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ConcatDataset</span></code>]]</p>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#graphnet.data.dataset.Dataset" title="graphnet.data.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></a>, <a class="reference internal" href="#graphnet.data.dataset.EnsembleDataset" title="graphnet.data.dataset.EnsembleDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">EnsembleDataset</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <a class="reference internal" href="#graphnet.data.dataset.Dataset" title="graphnet.data.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></a>], <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <a class="reference internal" href="#graphnet.data.dataset.EnsembleDataset" title="graphnet.data.dataset.EnsembleDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">EnsembleDataset</span></code></a>]]</p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>source</strong> (<a class="reference internal" href="graphnet.utilities.config.dataset_config.html#graphnet.utilities.config.dataset_config.DatasetConfig" title="graphnet.utilities.config.dataset_config.DatasetConfig"><em>DatasetConfig</em></a><em> | </em><em>str</em>) – </p>
@@ -633,7 +632,7 @@ events ~ event_no % 5 &gt; 0”</cite>).</p></li>
 <dd><p>Concatenate multiple <a href="#id1"><span class="problematic" id="id2">`</span></a>Dataset`s into one instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ConcatDataset</span></code></p>
+<dd class="field-odd"><p><a class="reference internal" href="#graphnet.data.dataset.EnsembleDataset" title="graphnet.data.dataset.EnsembleDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">EnsembleDataset</span></code></a></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>datasets</strong> (<em>List</em><em>[</em><a class="reference internal" href="#graphnet.data.dataset.Dataset" title="graphnet.data.dataset.Dataset"><em>Dataset</em></a><em>]</em>) – </p>
@@ -686,7 +685,7 @@ returned</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.data.dataset.Dataset.add_label">
-<span class="sig-name descname"><span class="pre">add_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/data/dataset.html#Dataset.add_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.data.dataset.Dataset.add_label" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/data/dataset.html#Dataset.add_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.data.dataset.Dataset.add_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add custom graph label define using function <cite>fn</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -694,8 +693,8 @@ returned</p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>key</strong> (<em>str</em>) – </p></li>
 <li><p><strong>fn</strong> (<em>Callable</em><em>[</em><em>[</em><em>Data</em><em>]</em><em>, </em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>key</strong> (<em>str</em><em> | </em><em>None</em>) – </p></li>
 </ul>
 </dd>
 </dl>
@@ -762,7 +761,7 @@ returned</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>
