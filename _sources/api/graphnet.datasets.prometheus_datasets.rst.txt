@@ -1,0 +1,7 @@
+graphnet.datasets.prometheus\_datasets module
+=============================================
+
+.. automodule:: graphnet.datasets.prometheus_datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:

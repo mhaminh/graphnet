@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +61,7 @@
 </script>
   
   
-    <title>icecube &#8212; graphnet  documentation</title>
+    <title>graphnet.models.detector.icecube module &#8212; graphnet  documentation</title>
 
 <style>
   dt:target {
@@ -111,18 +111,25 @@
     background: rgba(0,0,0,0.03);
   }
 
+  #eu-emblem {
+    margin: 0;
+  }
+
+  #eu-emblem figcaption {
+    display: none;
+  }
+
 </style>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="icon" href="../_static/favicon.svg"/>
-    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="prometheus" href="graphnet.models.detector.prometheus.html" />
-    <link rel="prev" title="detector" href="graphnet.models.detector.detector.html" />
+    <link rel="next" title="graphnet.models.detector.liquido module" href="graphnet.models.detector.liquido.html" />
+    <link rel="prev" title="graphnet.models.detector.detector module" href="graphnet.models.detector.detector.html" />
   
    
 
@@ -159,7 +166,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">GraphNeT</span>
-          <span class="md-header-nav__topic"> icecube </span>
+          <span class="md-header-nav__topic"> graphnet.models.detector.icecube module </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -169,7 +176,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" action="../search.html" method="get" name="search">
-      <input type="text" class="md-search__input" name="q" placeholder="Search"
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
              autocapitalize="off" autocomplete="off" spellcheck="false"
              data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
@@ -234,9 +241,9 @@
       <ul class="md-tabs__list">
             
             <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Documentation</a></li>
-          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">API</a></li>
-          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">models</a></li>
-          <li class="md-tabs__item"><a href="graphnet.models.detector.html" class="md-tabs__link">detector</a></li>
+          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">Subpackages</a></li>
+          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">graphnet.models package</a></li>
+          <li class="md-tabs__item"><a href="graphnet.models.detector.html" class="md-tabs__link">graphnet.models.detector package</a></li>
       </ul>
     </div>
   </nav>
@@ -278,57 +285,109 @@
     <li class="md-nav__item">
     
     
-      <a href="../install.html" class="md-nav__link">Install</a>
+      <a href="../installation/install.html" class="md-nav__link">Installation</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../contribute.html" class="md-nav__link">Contribute</a>
+      <a href="../models/models.html" class="md-nav__link">Models In GraphNeT</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.html" class="md-nav__link">API</a>
+      <a href="../datasets/datasets.html" class="md-nav__link">Datasets In GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../data_conversion/data_conversion.html" class="md-nav__link">Data Conversion in GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../integration/integration.html" class="md-nav__link">Integrating New Experiments into GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../contribute/contribute.html" class="md-nav__link">Contributing To GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.html" class="md-nav__link">Subpackages</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.data.html" class="md-nav__link">data</a>
+      <a href="graphnet.data.html" class="md-nav__link">graphnet.data package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.deployment.html" class="md-nav__link">deployment</a>
+      <a href="graphnet.datasets.html" class="md-nav__link">graphnet.datasets package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.html" class="md-nav__link">models</a>
+      <a href="graphnet.deployment.html" class="md-nav__link">graphnet.deployment package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.exceptions.html" class="md-nav__link">graphnet.exceptions package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.html" class="md-nav__link">graphnet.models package</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.components.html" class="md-nav__link">components</a>
+      <a href="graphnet.models.html#subpackages" class="md-nav__link">Subpackages</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.components.html" class="md-nav__link">graphnet.models.components package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.detector.html" class="md-nav__link">detector</a>
+      <a href="graphnet.models.detector.html" class="md-nav__link">graphnet.models.detector package</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.detector.detector.html" class="md-nav__link">detector</a>
+      <a href="graphnet.models.detector.html#submodules" class="md-nav__link">Submodules</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.detector.detector.html" class="md-nav__link">graphnet.models.detector.detector module</a>
       
     
     </li>
@@ -336,45 +395,61 @@
     
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> icecube </label>
+    <label class="md-nav__link md-nav__link--active" for="__toc"> graphnet.models.detector.icecube module </label>
     
-      <a href="#" class="md-nav__link md-nav__link--active">icecube</a>
+      <a href="#" class="md-nav__link md-nav__link--active">graphnet.models.detector.icecube module</a>
       
         
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-models-detector-icecube--page-root" class="md-nav__link">icecube</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-models-detector-icecube--page-root" class="md-nav__link">graphnet.models.detector.icecube module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCube86</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeKaggle</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeDeepCore</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeUpgrade</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
-        </li></ul>
-            </nav>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeUpgrade_V2</span></code></a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.nb_outputs" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">nb_outputs</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li></ul>
@@ -391,7 +466,35 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.detector.icecube.IceCube86.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+      <a href="#graphnet.models.detector.icecube.IceCube86.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCube86.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCube86.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCube86.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCube86.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
       
     
     </li></ul>
@@ -405,7 +508,35 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeKaggle.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
       
     
     </li></ul>
@@ -419,7 +550,7 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.detector.icecube.IceCubeDeepCore.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+      <a href="#graphnet.models.detector.icecube.IceCubeDeepCore.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
       
     
     </li></ul>
@@ -433,7 +564,92 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.detector.liquido.html" class="md-nav__link">graphnet.models.detector.liquido module</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.detector.prometheus.html" class="md-nav__link">graphnet.models.detector.prometheus module</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.gnn.html" class="md-nav__link">graphnet.models.gnn package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.graphs.html" class="md-nav__link">graphnet.models.graphs package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.rnn.html" class="md-nav__link">graphnet.models.rnn package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.task.html" class="md-nav__link">graphnet.models.task package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.transformer.html" class="md-nav__link">graphnet.models.transformer package</a>
       
     
     </li></ul>
@@ -442,30 +658,7 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeUpgrade_V2</span></code></a>
-      <ul class="md-nav__list"> 
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.nb_outputs" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">nb_outputs</span></code></a>
-      
-    
-    </li></ul>
-    
-    </li></ul>
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.detector.prometheus.html" class="md-nav__link">prometheus</a>
+      <a href="graphnet.models.html#submodules" class="md-nav__link">Submodules</a>
       
     
     </li></ul>
@@ -474,49 +667,14 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.gnn.html" class="md-nav__link">gnn</a>
+      <a href="graphnet.training.html" class="md-nav__link">graphnet.training package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.task.html" class="md-nav__link">task</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.coarsening.html" class="md-nav__link">coarsening</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.graph_builders.html" class="md-nav__link">graph_builders</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.model.html" class="md-nav__link">model</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.standard_model.html" class="md-nav__link">standard_model</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.utils.html" class="md-nav__link">utils</a>
+      <a href="graphnet.utilities.html" class="md-nav__link">graphnet.utilities package</a>
       
     
     </li></ul>
@@ -525,31 +683,8 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.pisa.html" class="md-nav__link">pisa</a>
+      <a href="graphnet.html#submodules" class="md-nav__link">Submodules</a>
       
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.training.html" class="md-nav__link">training</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.html" class="md-nav__link">utilities</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.constants.html" class="md-nav__link">constants</a>
-      
-    
-    </li></ul>
     
     </li>
   </ul>
@@ -564,39 +699,55 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-models-detector-icecube--page-root" class="md-nav__link">icecube</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-models-detector-icecube--page-root" class="md-nav__link">graphnet.models.detector.icecube module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCube86</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCube86.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeKaggle</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeKaggle.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeDeepCore</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeDeepCore.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeUpgrade</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
-        </li></ul>
-            </nav>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.geometry_table_path" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">geometry_table_path</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">IceCubeUpgrade_V2</span></code></a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.features" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">features</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.xyz" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">xyz</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.nb_outputs" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">nb_outputs</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.string_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">string_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.sensor_id_column" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">sensor_id_column</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.models.detector.icecube.IceCubeUpgrade.feature_map" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">feature_map()</span></code></a>
         </li></ul>
             </nav>
         </li></ul>
@@ -612,106 +763,166 @@
           <article class="md-content__inner md-typeset" role="main">
             
   <section id="module-graphnet.models.detector.icecube">
-<span id="icecube"></span><h1 id="api-graphnet-models-detector-icecube--page-root">icecube<a class="headerlink" href="#api-graphnet-models-detector-icecube--page-root" title="Permalink to this heading">¶</a></h1>
+<span id="graphnet-models-detector-icecube-module"></span><h1 id="api-graphnet-models-detector-icecube--page-root">graphnet.models.detector.icecube module<a class="headerlink" href="#api-graphnet-models-detector-icecube--page-root" title="Link to this heading">¶</a></h1>
 <p>IceCube-specific <cite>Detector</cite> class(es).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCube86</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_builder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCube86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCube86</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCube86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="graphnet.models.detector.detector.html#graphnet.models.detector.detector.Detector" title="graphnet.models.detector.detector.Detector"><code class="xref py py-class docutils literal notranslate"><span class="pre">Detector</span></code></a></p>
 <p><cite>Detector</cite> class for IceCube-86.</p>
 <p>Construct <cite>Detector</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>graph_builder</strong> (<a class="reference internal" href="graphnet.models.graph_builders.html#graphnet.models.graph_builders.GraphBuilder" title="graphnet.models.graph_builders.GraphBuilder"><em>GraphBuilder</em></a>) – </p></li>
-<li><p><strong>scalers</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.features">
-<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z',</span> <span class="pre">'dom_time',</span> <span class="pre">'charge',</span> <span class="pre">'rde',</span> <span class="pre">'pmt_area']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.features" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.geometry_table_path">
+<span class="sig-name descname"><span class="pre">geometry_table_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/home/runner/.local/lib/python3.10/data/geometry_tables/icecube/icecube86.parquet'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.geometry_table_path" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.xyz">
+<span class="sig-name descname"><span class="pre">xyz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.xyz" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.string_id_column">
+<span class="sig-name descname"><span class="pre">string_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'string'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.string_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.sensor_id_column">
+<span class="sig-name descname"><span class="pre">sensor_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'sensor_id'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.sensor_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCube86.feature_map">
+<span class="sig-name descname"><span class="pre">feature_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCube86.feature_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCube86.feature_map" title="Link to this definition">¶</a></dt>
+<dd><p>Map standardization functions to each dimension of input data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeKaggle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_builder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeKaggle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeKaggle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeKaggle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="graphnet.models.detector.detector.html#graphnet.models.detector.detector.Detector" title="graphnet.models.detector.detector.Detector"><code class="xref py py-class docutils literal notranslate"><span class="pre">Detector</span></code></a></p>
 <p><cite>Detector</cite> class for Kaggle Competition.</p>
 <p>Construct <cite>Detector</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>graph_builder</strong> (<a class="reference internal" href="graphnet.models.graph_builders.html#graphnet.models.graph_builders.GraphBuilder" title="graphnet.models.graph_builders.GraphBuilder"><em>GraphBuilder</em></a>) – </p></li>
-<li><p><strong>scalers</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.features">
-<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['x',</span> <span class="pre">'y',</span> <span class="pre">'z',</span> <span class="pre">'time',</span> <span class="pre">'charge',</span> <span class="pre">'auxiliary']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.features" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.geometry_table_path">
+<span class="sig-name descname"><span class="pre">geometry_table_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/home/runner/.local/lib/python3.10/data/geometry_tables/icecube/icecube86.parquet'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.geometry_table_path" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.xyz">
+<span class="sig-name descname"><span class="pre">xyz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['x',</span> <span class="pre">'y',</span> <span class="pre">'z']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.xyz" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.string_id_column">
+<span class="sig-name descname"><span class="pre">string_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'string'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.string_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.sensor_id_column">
+<span class="sig-name descname"><span class="pre">sensor_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'sensor_id'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.sensor_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeKaggle.feature_map">
+<span class="sig-name descname"><span class="pre">feature_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeKaggle.feature_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeKaggle.feature_map" title="Link to this definition">¶</a></dt>
+<dd><p>Map standardization functions to each dimension of input data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeDeepCore">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeDeepCore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_builder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeDeepCore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeDeepCore" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeDeepCore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeDeepCore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeDeepCore" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#graphnet.models.detector.icecube.IceCube86" title="graphnet.models.detector.icecube.IceCube86"><code class="xref py py-class docutils literal notranslate"><span class="pre">IceCube86</span></code></a></p>
 <p><cite>Detector</cite> class for IceCube-DeepCore.</p>
 <p>Construct <cite>Detector</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>graph_builder</strong> (<a class="reference internal" href="graphnet.models.graph_builders.html#graphnet.models.graph_builders.GraphBuilder" title="graphnet.models.graph_builders.GraphBuilder"><em>GraphBuilder</em></a>) – </p></li>
-<li><p><strong>scalers</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
 </dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
+</dd>
 </dl>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeDeepCore.features">
-<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z',</span> <span class="pre">'dom_time',</span> <span class="pre">'charge',</span> <span class="pre">'rde',</span> <span class="pre">'pmt_area']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeDeepCore.features" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeDeepCore.feature_map">
+<span class="sig-name descname"><span class="pre">feature_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeDeepCore.feature_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeDeepCore.feature_map" title="Link to this definition">¶</a></dt>
+<dd><p>Map standardization functions to each dimension of input data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeUpgrade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_builder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeUpgrade"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#graphnet.models.detector.icecube.IceCubeDeepCore" title="graphnet.models.detector.icecube.IceCubeDeepCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">IceCubeDeepCore</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeUpgrade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeUpgrade"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="graphnet.models.detector.detector.html#graphnet.models.detector.detector.Detector" title="graphnet.models.detector.detector.Detector"><code class="xref py py-class docutils literal notranslate"><span class="pre">Detector</span></code></a></p>
 <p><cite>Detector</cite> class for IceCube-Upgrade.</p>
 <p>Construct <cite>Detector</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>graph_builder</strong> (<a class="reference internal" href="graphnet.models.graph_builders.html#graphnet.models.graph_builders.GraphBuilder" title="graphnet.models.graph_builders.GraphBuilder"><em>GraphBuilder</em></a>) – </p></li>
-<li><p><strong>scalers</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.features">
-<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z',</span> <span class="pre">'dom_time',</span> <span class="pre">'charge',</span> <span class="pre">'rde',</span> <span class="pre">'pmt_area',</span> <span class="pre">'string',</span> <span class="pre">'pmt_number',</span> <span class="pre">'dom_number',</span> <span class="pre">'pmt_dir_x',</span> <span class="pre">'pmt_dir_y',</span> <span class="pre">'pmt_dir_z',</span> <span class="pre">'dom_type']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.features" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.geometry_table_path">
+<span class="sig-name descname"><span class="pre">geometry_table_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/home/runner/.local/lib/python3.10/data/geometry_tables/icecube/icecube_upgrade.parquet'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.geometry_table_path" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
-</dd></dl>
-<dl class="py class">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade_V2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.detector.icecube.</span></span><span class="sig-name descname"><span class="pre">IceCubeUpgrade_V2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_builder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeUpgrade_V2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#graphnet.models.detector.icecube.IceCubeDeepCore" title="graphnet.models.detector.icecube.IceCubeDeepCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">IceCubeDeepCore</span></code></a></p>
-<p><cite>Detector</cite> class for IceCube-Upgrade.</p>
-<p>Construct <cite>Detector</cite>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.xyz">
+<span class="sig-name descname"><span class="pre">xyz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.xyz" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.string_id_column">
+<span class="sig-name descname"><span class="pre">string_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'string'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.string_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.sensor_id_column">
+<span class="sig-name descname"><span class="pre">sensor_id_column</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'sensor_id'</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.sensor_id_column" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade.feature_map">
+<span class="sig-name descname"><span class="pre">feature_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/detector/icecube.html#IceCubeUpgrade.feature_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade.feature_map" title="Link to this definition">¶</a></dt>
+<dd><p>Map standardization functions to each dimension of input data.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>graph_builder</strong> (<a class="reference internal" href="graphnet.models.graph_builders.html#graphnet.models.graph_builders.GraphBuilder" title="graphnet.models.graph_builders.GraphBuilder"><em>GraphBuilder</em></a>) – </p></li>
-<li><p><strong>scalers</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – </p></li>
-</ul>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>]</span></p>
 </dd>
 </dl>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade_V2.features">
-<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dom_x',</span> <span class="pre">'dom_y',</span> <span class="pre">'dom_z',</span> <span class="pre">'dom_time',</span> <span class="pre">'charge',</span> <span class="pre">'rde',</span> <span class="pre">'pmt_area',</span> <span class="pre">'string',</span> <span class="pre">'pmt_number',</span> <span class="pre">'dom_number',</span> <span class="pre">'pmt_dir_x',</span> <span class="pre">'pmt_dir_y',</span> <span class="pre">'pmt_dir_z',</span> <span class="pre">'dom_type']</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.features" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-<dl class="py property">
-<dt class="sig sig-object py" id="graphnet.models.detector.icecube.IceCubeUpgrade_V2.nb_outputs">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nb_outputs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#graphnet.models.detector.icecube.IceCubeUpgrade_V2.nb_outputs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return number of output features.</p>
 </dd></dl>
 </dd></dl>
 </section>
@@ -726,7 +937,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="graphnet.models.detector.detector.html" title="detector"
+            <a href="graphnet.models.detector.detector.html" title="graphnet.models.detector.detector module"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -735,17 +946,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> detector </span>
+                      class="md-footer-nav__direction"> "Previous" </span> graphnet.models.detector.detector module </span>
               </div>
             </a>
           
           
-            <a href="graphnet.models.detector.prometheus.html" title="prometheus"
+            <a href="graphnet.models.detector.liquido.html" title="graphnet.models.detector.liquido module"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> prometheus </span>
+                class="md-footer-nav__direction"> "Next" </span> graphnet.models.detector.liquido module </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
@@ -759,11 +970,11 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           <div class="md-footer-copyright__highlight">
-              &#169; Copyright 2021-2023, GraphNeT team.
+              &#169; Copyright 2021-2024, GraphNeT team.
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

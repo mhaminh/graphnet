@@ -1,0 +1,7 @@
+graphnet.models.gnn.RNN\_tito module
+====================================
+
+.. automodule:: graphnet.models.gnn.RNN_tito
+   :members:
+   :undoc-members:
+   :show-inheritance:

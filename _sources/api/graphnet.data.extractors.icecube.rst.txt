@@ -1,0 +1,34 @@
+graphnet.data.extractors.icecube package
+========================================
+
+.. automodule:: graphnet.data.extractors.icecube
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 2
+
+   graphnet.data.extractors.icecube.utilities
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   graphnet.data.extractors.icecube.i3extractor
+   graphnet.data.extractors.icecube.i3featureextractor
+   graphnet.data.extractors.icecube.i3genericextractor
+   graphnet.data.extractors.icecube.i3hybridrecoextractor
+   graphnet.data.extractors.icecube.i3ntmuonlabelsextractor
+   graphnet.data.extractors.icecube.i3particleextractor
+   graphnet.data.extractors.icecube.i3pisaextractor
+   graphnet.data.extractors.icecube.i3quesoextractor
+   graphnet.data.extractors.icecube.i3retroextractor
+   graphnet.data.extractors.icecube.i3splinempeextractor
+   graphnet.data.extractors.icecube.i3truthextractor
+   graphnet.data.extractors.icecube.i3tumextractor

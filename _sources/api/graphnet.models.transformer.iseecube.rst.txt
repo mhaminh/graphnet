@@ -1,0 +1,7 @@
+graphnet.models.transformer.iseecube module
+===========================================
+
+.. automodule:: graphnet.models.transformer.iseecube
+   :members:
+   :undoc-members:
+   :show-inheritance:

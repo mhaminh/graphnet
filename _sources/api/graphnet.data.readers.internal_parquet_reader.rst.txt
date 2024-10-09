@@ -1,0 +1,7 @@
+graphnet.data.readers.internal\_parquet\_reader module
+======================================================
+
+.. automodule:: graphnet.data.readers.internal_parquet_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+graphnet.data.extractors.icecube.i3retroextractor module
+========================================================
+
+.. automodule:: graphnet.data.extractors.icecube.i3retroextractor
+   :members:
+   :undoc-members:
+   :show-inheritance:

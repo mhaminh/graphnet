@@ -1,0 +1,7 @@
+graphnet.models.detector.liquido module
+=======================================
+
+.. automodule:: graphnet.models.detector.liquido
+   :members:
+   :undoc-members:
+   :show-inheritance:

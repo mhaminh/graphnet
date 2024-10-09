@@ -1,0 +1,7 @@
+graphnet.exceptions.exceptions module
+=====================================
+
+.. automodule:: graphnet.exceptions.exceptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

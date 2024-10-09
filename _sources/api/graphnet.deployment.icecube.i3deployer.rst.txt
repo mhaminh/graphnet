@@ -1,0 +1,7 @@
+graphnet.deployment.icecube.i3deployer module
+=============================================
+
+.. automodule:: graphnet.deployment.icecube.i3deployer
+   :members:
+   :undoc-members:
+   :show-inheritance:

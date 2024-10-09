@@ -1,0 +1,15 @@
+graphnet.data.extractors.internal package
+=========================================
+
+.. automodule:: graphnet.data.extractors.internal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   graphnet.data.extractors.internal.parquet_extractor

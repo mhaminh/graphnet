@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +61,7 @@
 </script>
   
   
-    <title>components &#8212; graphnet  documentation</title>
+    <title>graphnet.models.components package &#8212; graphnet  documentation</title>
 
 <style>
   dt:target {
@@ -111,18 +111,26 @@
     background: rgba(0,0,0,0.03);
   }
 
+  #eu-emblem {
+    margin: 0;
+  }
+
+  #eu-emblem figcaption {
+    display: none;
+  }
+
 </style>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="icon" href="../_static/favicon.svg"/>
-    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="layers" href="graphnet.models.components.layers.html" />
-    <link rel="prev" title="models" href="graphnet.models.html" />
+    <link rel="next" title="graphnet.models.components.embedding module" href="graphnet.models.components.embedding.html" />
+    <link rel="prev" title="graphnet.models package" href="graphnet.models.html" />
   
    
 
@@ -159,7 +167,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">GraphNeT</span>
-          <span class="md-header-nav__topic"> components </span>
+          <span class="md-header-nav__topic"> graphnet.models.components package </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -169,7 +177,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" action="../search.html" method="get" name="search">
-      <input type="text" class="md-search__input" name="q" placeholder="Search"
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
              autocapitalize="off" autocomplete="off" spellcheck="false"
              data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
@@ -234,8 +242,8 @@
       <ul class="md-tabs__list">
             
             <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Documentation</a></li>
-          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">API</a></li>
-          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">models</a></li>
+          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">Subpackages</a></li>
+          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">graphnet.models package</a></li>
       </ul>
     </div>
   </nav>
@@ -277,66 +285,178 @@
     <li class="md-nav__item">
     
     
-      <a href="../install.html" class="md-nav__link">Install</a>
+      <a href="../installation/install.html" class="md-nav__link">Installation</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../contribute.html" class="md-nav__link">Contribute</a>
+      <a href="../models/models.html" class="md-nav__link">Models In GraphNeT</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.html" class="md-nav__link">API</a>
+      <a href="../datasets/datasets.html" class="md-nav__link">Datasets In GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../data_conversion/data_conversion.html" class="md-nav__link">Data Conversion in GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../integration/integration.html" class="md-nav__link">Integrating New Experiments into GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../contribute/contribute.html" class="md-nav__link">Contributing To GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.html" class="md-nav__link">Subpackages</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.data.html" class="md-nav__link">data</a>
+      <a href="graphnet.data.html" class="md-nav__link">graphnet.data package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.deployment.html" class="md-nav__link">deployment</a>
+      <a href="graphnet.datasets.html" class="md-nav__link">graphnet.datasets package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.html" class="md-nav__link">models</a>
+      <a href="graphnet.deployment.html" class="md-nav__link">graphnet.deployment package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.exceptions.html" class="md-nav__link">graphnet.exceptions package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.html" class="md-nav__link">graphnet.models package</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.html#subpackages" class="md-nav__link">Subpackages</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> components </label>
+    <label class="md-nav__link md-nav__link--active" for="__toc"> graphnet.models.components package </label>
     
-      <a href="#" class="md-nav__link md-nav__link--active">components</a>
+      <a href="#" class="md-nav__link md-nav__link--active">graphnet.models.components package</a>
       
         
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#api-graphnet-models-components--page-root" class="md-nav__link">graphnet.models.components package</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#submodules" class="md-nav__link">Submodules</a>
+        </li></ul>
+            </nav>
+        </li>
   </ul>
 </nav>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.components.layers.html" class="md-nav__link">layers</a>
+      <a href="#submodules" class="md-nav__link">Submodules</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.components.embedding.html" class="md-nav__link">graphnet.models.components.embedding module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.components.pool.html" class="md-nav__link">pool</a>
+      <a href="graphnet.models.components.layers.html" class="md-nav__link">graphnet.models.components.layers module</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.components.pool.html" class="md-nav__link">graphnet.models.components.pool module</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.detector.html" class="md-nav__link">graphnet.models.detector package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.gnn.html" class="md-nav__link">graphnet.models.gnn package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.graphs.html" class="md-nav__link">graphnet.models.graphs package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.rnn.html" class="md-nav__link">graphnet.models.rnn package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.task.html" class="md-nav__link">graphnet.models.task package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.transformer.html" class="md-nav__link">graphnet.models.transformer package</a>
       
     
     </li></ul>
@@ -345,56 +465,7 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.detector.html" class="md-nav__link">detector</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.gnn.html" class="md-nav__link">gnn</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.task.html" class="md-nav__link">task</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.coarsening.html" class="md-nav__link">coarsening</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.graph_builders.html" class="md-nav__link">graph_builders</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.model.html" class="md-nav__link">model</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.standard_model.html" class="md-nav__link">standard_model</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.utils.html" class="md-nav__link">utils</a>
+      <a href="graphnet.models.html#submodules" class="md-nav__link">Submodules</a>
       
     
     </li></ul>
@@ -403,31 +474,24 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.pisa.html" class="md-nav__link">pisa</a>
+      <a href="graphnet.training.html" class="md-nav__link">graphnet.training package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.training.html" class="md-nav__link">training</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.html" class="md-nav__link">utilities</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.constants.html" class="md-nav__link">constants</a>
+      <a href="graphnet.utilities.html" class="md-nav__link">graphnet.utilities package</a>
       
     
     </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.html#submodules" class="md-nav__link">Submodules</a>
+      
     
     </li>
   </ul>
@@ -442,7 +506,14 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#api-graphnet-models-components--page-root" class="md-nav__link">graphnet.models.components package</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#submodules" class="md-nav__link">Submodules</a>
+        </li></ul>
+            </nav>
+        </li>
   </ul>
 </nav>
               </div>
@@ -453,18 +524,30 @@
           <article class="md-content__inner md-typeset" role="main">
             
   <section id="module-graphnet.models.components">
-<span id="components"></span><h1 id="api-graphnet-models-components--page-root">components<a class="headerlink" href="#api-graphnet-models-components--page-root" title="Permalink to this heading">¶</a></h1>
+<span id="graphnet-models-components-package"></span><h1 id="api-graphnet-models-components--page-root">graphnet.models.components package<a class="headerlink" href="#api-graphnet-models-components--page-root" title="Link to this heading">¶</a></h1>
 <p>Components for constructing models.</p>
-<p><h2> Submodules </h2></p>
+<section id="submodules">
+<h2 id="submodules">Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="graphnet.models.components.layers.html">layers</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="graphnet.models.components.embedding.html">graphnet.models.components.embedding module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.embedding.html#graphnet.models.components.embedding.SinusoidalPosEmb"><code class="docutils literal notranslate"><span class="pre">SinusoidalPosEmb</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.embedding.html#graphnet.models.components.embedding.FourierEncoder"><code class="docutils literal notranslate"><span class="pre">FourierEncoder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.embedding.html#graphnet.models.components.embedding.SpacetimeEncoder"><code class="docutils literal notranslate"><span class="pre">SpacetimeEncoder</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="graphnet.models.components.layers.html">graphnet.models.components.layers module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.DynEdgeConv"><code class="docutils literal notranslate"><span class="pre">DynEdgeConv</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.EdgeConvTito"><code class="docutils literal notranslate"><span class="pre">EdgeConvTito</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.DynTrans"><code class="docutils literal notranslate"><span class="pre">DynTrans</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.DropPath"><code class="docutils literal notranslate"><span class="pre">DropPath</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.Mlp"><code class="docutils literal notranslate"><span class="pre">Mlp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.Block_rel"><code class="docutils literal notranslate"><span class="pre">Block_rel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.Attention_rel"><code class="docutils literal notranslate"><span class="pre">Attention_rel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.layers.html#graphnet.models.components.layers.Block"><code class="docutils literal notranslate"><span class="pre">Block</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="graphnet.models.components.pool.html">pool</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="graphnet.models.components.pool.html">graphnet.models.components.pool module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.pool.html#graphnet.models.components.pool.min_pool"><code class="docutils literal notranslate"><span class="pre">min_pool()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.pool.html#graphnet.models.components.pool.min_pool_x"><code class="docutils literal notranslate"><span class="pre">min_pool_x()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="graphnet.models.components.pool.html#graphnet.models.components.pool.sum_pool_and_distribute"><code class="docutils literal notranslate"><span class="pre">sum_pool_and_distribute()</span></code></a></li>
@@ -480,6 +563,7 @@
 </ul>
 </div>
 </section>
+</section>
 
 
           </article>
@@ -491,7 +575,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="graphnet.models.html" title="models"
+            <a href="graphnet.models.html" title="graphnet.models package"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -500,17 +584,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> models </span>
+                      class="md-footer-nav__direction"> "Previous" </span> graphnet.models package </span>
               </div>
             </a>
           
           
-            <a href="graphnet.models.components.layers.html" title="layers"
+            <a href="graphnet.models.components.embedding.html" title="graphnet.models.components.embedding module"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> layers </span>
+                class="md-footer-nav__direction"> "Next" </span> graphnet.models.components.embedding module </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
@@ -524,11 +608,11 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           <div class="md-footer-copyright__highlight">
-              &#169; Copyright 2021-2023, GraphNeT team.
+              &#169; Copyright 2021-2024, GraphNeT team.
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

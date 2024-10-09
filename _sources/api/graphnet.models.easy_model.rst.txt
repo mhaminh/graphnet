@@ -1,0 +1,7 @@
+graphnet.models.easy\_model module
+==================================
+
+.. automodule:: graphnet.models.easy_model
+   :members:
+   :undoc-members:
+   :show-inheritance:

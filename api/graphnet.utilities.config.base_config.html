@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +61,7 @@
 </script>
   
   
-    <title>base_config &#8212; graphnet  documentation</title>
+    <title>graphnet.utilities.config.base_config module &#8212; graphnet  documentation</title>
 
 <style>
   dt:target {
@@ -111,18 +111,25 @@
     background: rgba(0,0,0,0.03);
   }
 
+  #eu-emblem {
+    margin: 0;
+  }
+
+  #eu-emblem figcaption {
+    display: none;
+  }
+
 </style>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="icon" href="../_static/favicon.svg"/>
-    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="configurable" href="graphnet.utilities.config.configurable.html" />
-    <link rel="prev" title="config" href="graphnet.utilities.config.html" />
+    <link rel="next" title="graphnet.utilities.config.configurable module" href="graphnet.utilities.config.configurable.html" />
+    <link rel="prev" title="graphnet.utilities.config package" href="graphnet.utilities.config.html" />
   
    
 
@@ -159,7 +166,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">GraphNeT</span>
-          <span class="md-header-nav__topic"> base_config </span>
+          <span class="md-header-nav__topic"> graphnet.utilities.config.base_config module </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -169,7 +176,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" action="../search.html" method="get" name="search">
-      <input type="text" class="md-search__input" name="q" placeholder="Search"
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
              autocapitalize="off" autocomplete="off" spellcheck="false"
              data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
@@ -234,9 +241,9 @@
       <ul class="md-tabs__list">
             
             <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Documentation</a></li>
-          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">API</a></li>
-          <li class="md-tabs__item"><a href="graphnet.utilities.html" class="md-tabs__link">utilities</a></li>
-          <li class="md-tabs__item"><a href="graphnet.utilities.config.html" class="md-tabs__link">config</a></li>
+          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">Subpackages</a></li>
+          <li class="md-tabs__item"><a href="graphnet.utilities.html" class="md-tabs__link">graphnet.utilities package</a></li>
+          <li class="md-tabs__item"><a href="graphnet.utilities.config.html" class="md-tabs__link">graphnet.utilities.config package</a></li>
       </ul>
     </div>
   </nav>
@@ -278,80 +285,125 @@
     <li class="md-nav__item">
     
     
-      <a href="../install.html" class="md-nav__link">Install</a>
+      <a href="../installation/install.html" class="md-nav__link">Installation</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../contribute.html" class="md-nav__link">Contribute</a>
+      <a href="../models/models.html" class="md-nav__link">Models In GraphNeT</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.html" class="md-nav__link">API</a>
+      <a href="../datasets/datasets.html" class="md-nav__link">Datasets In GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../data_conversion/data_conversion.html" class="md-nav__link">Data Conversion in GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../integration/integration.html" class="md-nav__link">Integrating New Experiments into GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../contribute/contribute.html" class="md-nav__link">Contributing To GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.html" class="md-nav__link">Subpackages</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.data.html" class="md-nav__link">data</a>
+      <a href="graphnet.data.html" class="md-nav__link">graphnet.data package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.deployment.html" class="md-nav__link">deployment</a>
+      <a href="graphnet.datasets.html" class="md-nav__link">graphnet.datasets package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.html" class="md-nav__link">models</a>
+      <a href="graphnet.deployment.html" class="md-nav__link">graphnet.deployment package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.pisa.html" class="md-nav__link">pisa</a>
+      <a href="graphnet.exceptions.html" class="md-nav__link">graphnet.exceptions package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.training.html" class="md-nav__link">training</a>
+      <a href="graphnet.models.html" class="md-nav__link">graphnet.models package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.html" class="md-nav__link">utilities</a>
+      <a href="graphnet.training.html" class="md-nav__link">graphnet.training package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.utilities.html" class="md-nav__link">graphnet.utilities package</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.html" class="md-nav__link">config</a>
+      <a href="graphnet.utilities.html#subpackages" class="md-nav__link">Subpackages</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.utilities.config.html" class="md-nav__link">graphnet.utilities.config package</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.utilities.config.html#submodules" class="md-nav__link">Submodules</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> base_config </label>
+    <label class="md-nav__link md-nav__link--active" for="__toc"> graphnet.utilities.config.base_config module </label>
     
-      <a href="#" class="md-nav__link md-nav__link--active">base_config</a>
+      <a href="#" class="md-nav__link md-nav__link--active">graphnet.utilities.config.base_config module</a>
       
         
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-utilities-config-base-config--page-root" class="md-nav__link">base_config</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-utilities-config-base-config--page-root" class="md-nav__link">graphnet.utilities.config.base_config module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">BaseConfig</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
@@ -360,6 +412,12 @@
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.dump" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">dump()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.as_dict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">as_dict()</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_computed_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_computed_fields</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_config" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_config</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_fields</span></code></a>
         </li></ul>
             </nav>
         </li>
@@ -395,6 +453,27 @@
       <a href="#graphnet.utilities.config.base_config.BaseConfig.as_dict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">as_dict()</span></code></a>
       
     
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.utilities.config.base_config.BaseConfig.model_computed_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_computed_fields</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.utilities.config.base_config.BaseConfig.model_config" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_config</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#graphnet.utilities.config.base_config.BaseConfig.model_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_fields</span></code></a>
+      
+    
     </li></ul>
     
     </li>
@@ -410,36 +489,40 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.configurable.html" class="md-nav__link">configurable</a>
+      <a href="graphnet.utilities.config.configurable.html" class="md-nav__link">graphnet.utilities.config.configurable module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.dataset_config.html" class="md-nav__link">dataset_config</a>
+      <a href="graphnet.utilities.config.dataset_config.html" class="md-nav__link">graphnet.utilities.config.dataset_config module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.model_config.html" class="md-nav__link">model_config</a>
+      <a href="graphnet.utilities.config.model_config.html" class="md-nav__link">graphnet.utilities.config.model_config module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.parsing.html" class="md-nav__link">parsing</a>
+      <a href="graphnet.utilities.config.parsing.html" class="md-nav__link">graphnet.utilities.config.parsing module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.config.training_config.html" class="md-nav__link">training_config</a>
+      <a href="graphnet.utilities.config.training_config.html" class="md-nav__link">graphnet.utilities.config.training_config module</a>
       
+    
+    </li></ul>
+    
+    </li></ul>
     
     </li></ul>
     
@@ -447,43 +530,10 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.utilities.argparse.html" class="md-nav__link">argparse</a>
+      <a href="graphnet.utilities.html#submodules" class="md-nav__link">Submodules</a>
       
     
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.decorators.html" class="md-nav__link">decorators</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.filesys.html" class="md-nav__link">filesys</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.imports.html" class="md-nav__link">imports</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.logging.html" class="md-nav__link">logging</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.maths.html" class="md-nav__link">maths</a>
-      
+    </li></ul>
     
     </li></ul>
     
@@ -491,10 +541,8 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.constants.html" class="md-nav__link">constants</a>
+      <a href="graphnet.html#submodules" class="md-nav__link">Submodules</a>
       
-    
-    </li></ul>
     
     </li>
   </ul>
@@ -509,9 +557,9 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-utilities-config-base-config--page-root" class="md-nav__link">base_config</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-utilities-config-base-config--page-root" class="md-nav__link">graphnet.utilities.config.base_config module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">BaseConfig</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
@@ -520,6 +568,12 @@
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.dump" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">dump()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.as_dict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">as_dict()</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_computed_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_computed_fields</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_config" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_config</span></code></a>
+        </li>
+        <li class="md-nav__item"><a href="#graphnet.utilities.config.base_config.BaseConfig.model_fields" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">model_fields</span></code></a>
         </li></ul>
             </nav>
         </li>
@@ -537,68 +591,87 @@
           <article class="md-content__inner md-typeset" role="main">
             
   <section id="module-graphnet.utilities.config.base_config">
-<span id="base-config"></span><h1 id="api-graphnet-utilities-config-base-config--page-root">base_config<a class="headerlink" href="#api-graphnet-utilities-config-base-config--page-root" title="Permalink to this heading">¶</a></h1>
+<span id="graphnet-utilities-config-base-config-module"></span><h1 id="api-graphnet-utilities-config-base-config--page-root">graphnet.utilities.config.base_config module<a class="headerlink" href="#api-graphnet-utilities-config-base-config--page-root" title="Link to this heading">¶</a></h1>
 <p>Base config class(es).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.utilities.config.base_config.</span></span><span class="sig-name descname"><span class="pre">BaseConfig</span></span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.utilities.config.base_config.</span></span><span class="sig-name descname"><span class="pre">BaseConfig</span></span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
 <p>Base class for Configs.</p>
 <p>Create a new model by parsing and validating input data from keyword arguments.</p>
-<p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
+<p>Raises [<cite>ValidationError</cite>][pydantic_core.ValidationError] if the input data cannot be
+validated to form a valid model.</p>
+<p><cite>self</cite> is explicitly positional-only to allow <cite>self</cite> as a field name.</p>
 <dl class="field-list simple">
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.load">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.load" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.load" title="Link to this definition">¶</a></dt>
 <dd><p>Load BaseConfig from <cite>path</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#graphnet.utilities.config.base_config.BaseConfig" title="graphnet.utilities.config.base_config.BaseConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#graphnet.utilities.config.base_config.BaseConfig" title="graphnet.utilities.config.base_config.BaseConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>path</strong> (<em>str</em>) – </p>
+<dd class="field-even"><p><strong>path</strong> (<em>str</em>)</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.dump">
-<span class="sig-name descname"><span class="pre">dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.dump"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.dump" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.dump"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.dump" title="Link to this definition">¶</a></dt>
 <dd><p>Save BaseConfig to <cite>path</cite> as YAML file, or return as string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>path</strong> (<em>str</em><em> | </em><em>None</em>) – </p>
+<dd class="field-even"><p><strong>path</strong> (<em>str</em><em> | </em><em>None</em>)</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.as_dict">
-<span class="sig-name descname"><span class="pre">as_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.as_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.as_dict" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">as_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#BaseConfig.as_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.as_dict" title="Link to this definition">¶</a></dt>
 <dd><p>Represent BaseConfig as a dict.</p>
 <p>This builds on <cite>BaseModel.dict()</cite> but can be overwritten.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span></p>
 </dd>
 </dl>
+</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.model_computed_fields">
+<span class="sig-name descname"><span class="pre">model_computed_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[Dict[str,</span> <span class="pre">ComputedFieldInfo]]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.model_computed_fields" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of computed field names and their corresponding <cite>ComputedFieldInfo</cite> objects.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="graphnet.utilities.config.base_config.BaseConfig.model_fields">
+<span class="sig-name descname"><span class="pre">model_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[Dict[str,</span> <span class="pre">FieldInfo]]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#graphnet.utilities.config.base_config.BaseConfig.model_fields" title="Link to this definition">¶</a></dt>
+<dd><p>Metadata about the fields defined on the model,
+mapping of field names to [<cite>FieldInfo</cite>][pydantic.fields.FieldInfo] objects.</p>
+<p>This replaces <cite>Model.__fields__</cite> from Pydantic V1.</p>
 </dd></dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="graphnet.utilities.config.base_config.get_all_argument_values">
-<span class="sig-prename descclassname"><span class="pre">graphnet.utilities.config.base_config.</span></span><span class="sig-name descname"><span class="pre">get_all_argument_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#get_all_argument_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.get_all_argument_values" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">graphnet.utilities.config.base_config.</span></span><span class="sig-name descname"><span class="pre">get_all_argument_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/utilities/config/base_config.html#get_all_argument_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.utilities.config.base_config.get_all_argument_values" title="Link to this definition">¶</a></dt>
 <dd><p>Return dict of all argument values to <cite>fn</cite>, including defaults.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>fn</strong> (<em>Callable</em>) – </p></li>
-<li><p><strong>args</strong> (<em>Any</em>) – </p></li>
-<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+<li><p><strong>fn</strong> (<em>Callable</em>)</p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -615,7 +688,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="graphnet.utilities.config.html" title="config"
+            <a href="graphnet.utilities.config.html" title="graphnet.utilities.config package"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -624,17 +697,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> config </span>
+                      class="md-footer-nav__direction"> "Previous" </span> graphnet.utilities.config package </span>
               </div>
             </a>
           
           
-            <a href="graphnet.utilities.config.configurable.html" title="configurable"
+            <a href="graphnet.utilities.config.configurable.html" title="graphnet.utilities.config.configurable module"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> configurable </span>
+                class="md-footer-nav__direction"> "Next" </span> graphnet.utilities.config.configurable module </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
@@ -648,11 +721,11 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           <div class="md-footer-copyright__highlight">
-              &#169; Copyright 2021-2023, GraphNeT team.
+              &#169; Copyright 2021-2024, GraphNeT team.
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

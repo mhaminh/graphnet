@@ -1,0 +1,16 @@
+graphnet.models.graphs.edges package
+====================================
+
+.. automodule:: graphnet.models.graphs.edges
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   graphnet.models.graphs.edges.edges
+   graphnet.models.graphs.edges.minkowski

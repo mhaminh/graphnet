@@ -1,34 +1,25 @@
-
-deployment
-==========
-
+graphnet.deployment package
+===========================
 
 .. automodule:: graphnet.deployment
    :members:
    :undoc-members:
    :show-inheritance:
 
-
-|start-h2| Subpackages |end-h2|
+Subpackages
+-----------
 
 .. toctree::
    :maxdepth: 2
 
    graphnet.deployment.i3modules
+   graphnet.deployment.icecube
 
+Submodules
+----------
 
-.. |start-h2| raw:: html
+.. toctree::
+   :maxdepth: 2
 
-     <h2>
-
-.. |end-h2| raw:: html
-
-     </h2>
-
-.. |start-h3| raw:: html
-
-     <h3>
-
-.. |end-h3| raw:: html
-
-     </h3>
+   graphnet.deployment.deployer
+   graphnet.deployment.deployment_module

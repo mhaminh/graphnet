@@ -1,0 +1,18 @@
+graphnet.data.extractors.icecube.utilities package
+==================================================
+
+.. automodule:: graphnet.data.extractors.icecube.utilities
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   graphnet.data.extractors.icecube.utilities.collections
+   graphnet.data.extractors.icecube.utilities.frames
+   graphnet.data.extractors.icecube.utilities.i3_filters
+   graphnet.data.extractors.icecube.utilities.types

@@ -1,0 +1,7 @@
+graphnet.models.graphs.edges.edges module
+=========================================
+
+.. automodule:: graphnet.models.graphs.edges.edges
+   :members:
+   :undoc-members:
+   :show-inheritance:

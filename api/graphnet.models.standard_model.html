@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +61,7 @@
 </script>
   
   
-    <title>standard_model &#8212; graphnet  documentation</title>
+    <title>graphnet.models.standard_model module &#8212; graphnet  documentation</title>
 
 <style>
   dt:target {
@@ -111,18 +111,25 @@
     background: rgba(0,0,0,0.03);
   }
 
+  #eu-emblem {
+    margin: 0;
+  }
+
+  #eu-emblem figcaption {
+    display: none;
+  }
+
 </style>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="icon" href="../_static/favicon.svg"/>
-    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="utils" href="graphnet.models.utils.html" />
-    <link rel="prev" title="model" href="graphnet.models.model.html" />
+    <link rel="next" title="graphnet.models.utils module" href="graphnet.models.utils.html" />
+    <link rel="prev" title="graphnet.models.standard_averaged_model module" href="graphnet.models.standard_averaged_model.html" />
   
    
 
@@ -159,7 +166,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           <span class="md-header-nav__topic">GraphNeT</span>
-          <span class="md-header-nav__topic"> standard_model </span>
+          <span class="md-header-nav__topic"> graphnet.models.standard_model module </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -169,7 +176,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" action="../search.html" method="get" name="search">
-      <input type="text" class="md-search__input" name="q" placeholder="Search"
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
              autocapitalize="off" autocomplete="off" spellcheck="false"
              data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
@@ -234,8 +241,8 @@
       <ul class="md-tabs__list">
             
             <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Documentation</a></li>
-          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">API</a></li>
-          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">models</a></li>
+          <li class="md-tabs__item"><a href="graphnet.html" class="md-tabs__link">Subpackages</a></li>
+          <li class="md-tabs__item"><a href="graphnet.models.html" class="md-tabs__link">graphnet.models package</a></li>
       </ul>
     </div>
   </nav>
@@ -277,87 +284,127 @@
     <li class="md-nav__item">
     
     
-      <a href="../install.html" class="md-nav__link">Install</a>
+      <a href="../installation/install.html" class="md-nav__link">Installation</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../contribute.html" class="md-nav__link">Contribute</a>
+      <a href="../models/models.html" class="md-nav__link">Models In GraphNeT</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.html" class="md-nav__link">API</a>
+      <a href="../datasets/datasets.html" class="md-nav__link">Datasets In GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../data_conversion/data_conversion.html" class="md-nav__link">Data Conversion in GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../integration/integration.html" class="md-nav__link">Integrating New Experiments into GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../contribute/contribute.html" class="md-nav__link">Contributing To GraphNeT</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.html" class="md-nav__link">Subpackages</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.data.html" class="md-nav__link">data</a>
+      <a href="graphnet.data.html" class="md-nav__link">graphnet.data package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.deployment.html" class="md-nav__link">deployment</a>
+      <a href="graphnet.datasets.html" class="md-nav__link">graphnet.datasets package</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.html" class="md-nav__link">models</a>
+      <a href="graphnet.deployment.html" class="md-nav__link">graphnet.deployment package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.exceptions.html" class="md-nav__link">graphnet.exceptions package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.html" class="md-nav__link">graphnet.models package</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.components.html" class="md-nav__link">components</a>
+      <a href="graphnet.models.html#subpackages" class="md-nav__link">Subpackages</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.detector.html" class="md-nav__link">detector</a>
+      <a href="graphnet.models.html#submodules" class="md-nav__link">Submodules</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.models.coarsening.html" class="md-nav__link">graphnet.models.coarsening module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.gnn.html" class="md-nav__link">gnn</a>
+      <a href="graphnet.models.easy_model.html" class="md-nav__link">graphnet.models.easy_model module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.task.html" class="md-nav__link">task</a>
+      <a href="graphnet.models.model.html" class="md-nav__link">graphnet.models.model module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.coarsening.html" class="md-nav__link">coarsening</a>
+      <a href="graphnet.models.normalizing_flow.html" class="md-nav__link">graphnet.models.normalizing_flow module</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.graph_builders.html" class="md-nav__link">graph_builders</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.models.model.html" class="md-nav__link">model</a>
+      <a href="graphnet.models.standard_averaged_model.html" class="md-nav__link">graphnet.models.standard_averaged_model module</a>
       
     
     </li>
@@ -365,41 +412,25 @@
     
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> standard_model </label>
+    <label class="md-nav__link md-nav__link--active" for="__toc"> graphnet.models.standard_model module </label>
     
-      <a href="#" class="md-nav__link md-nav__link--active">standard_model</a>
+      <a href="#" class="md-nav__link md-nav__link--active">graphnet.models.standard_model module</a>
       
         
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-models-standard-model--page-root" class="md-nav__link">standard_model</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-models-standard-model--page-root" class="md-nav__link">graphnet.models.standard_model module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">StandardModel</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.target_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">target_labels</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.prediction_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">prediction_labels</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.configure_optimizers" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">configure_optimizers()</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.forward" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">forward()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.shared_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">shared_step()</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.training_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">training_step()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.validation_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validation_step()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.inference" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">inference()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.train" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.predict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.predict_as_dataframe" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict_as_dataframe()</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.validate_tasks" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validate_tasks()</span></code></a>
         </li></ul>
             </nav>
         </li></ul>
@@ -416,21 +447,7 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.standard_model.StandardModel.target_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">target_labels</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.prediction_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">prediction_labels</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.configure_optimizers" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">configure_optimizers()</span></code></a>
+      <a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
       
     
     </li>
@@ -451,49 +468,7 @@
     <li class="md-nav__item">
     
     
-      <a href="#graphnet.models.standard_model.StandardModel.training_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">training_step()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.validation_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validation_step()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.inference" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">inference()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.train" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.predict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="#graphnet.models.standard_model.StandardModel.predict_as_dataframe" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict_as_dataframe()</span></code></a>
+      <a href="#graphnet.models.standard_model.StandardModel.validate_tasks" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validate_tasks()</span></code></a>
       
     
     </li></ul>
@@ -504,7 +479,25 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.models.utils.html" class="md-nav__link">utils</a>
+      <a href="graphnet.models.utils.html" class="md-nav__link">graphnet.models.utils module</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.training.html" class="md-nav__link">graphnet.training package</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="graphnet.utilities.html" class="md-nav__link">graphnet.utilities package</a>
       
     
     </li></ul>
@@ -513,31 +506,8 @@
     <li class="md-nav__item">
     
     
-      <a href="graphnet.pisa.html" class="md-nav__link">pisa</a>
+      <a href="graphnet.html#submodules" class="md-nav__link">Submodules</a>
       
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.training.html" class="md-nav__link">training</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.utilities.html" class="md-nav__link">utilities</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="graphnet.constants.html" class="md-nav__link">constants</a>
-      
-    
-    </li></ul>
     
     </li>
   </ul>
@@ -552,35 +522,19 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#api-graphnet-models-standard-model--page-root" class="md-nav__link">standard_model</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#api-graphnet-models-standard-model--page-root" class="md-nav__link">graphnet.models.standard_model module</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">StandardModel</span></code></a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.target_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">target_labels</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.prediction_labels" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">prediction_labels</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.configure_optimizers" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">configure_optimizers()</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.forward" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">forward()</span></code></a>
         </li>
         <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.shared_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">shared_step()</span></code></a>
         </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.training_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">training_step()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.validation_step" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validation_step()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.compute_loss" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">compute_loss()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.inference" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">inference()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.train" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.predict" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a>
-        </li>
-        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.predict_as_dataframe" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">predict_as_dataframe()</span></code></a>
+        <li class="md-nav__item"><a href="#graphnet.models.standard_model.StandardModel.validate_tasks" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">validate_tasks()</span></code></a>
         </li></ul>
             </nav>
         </li></ul>
@@ -596,191 +550,83 @@
           <article class="md-content__inner md-typeset" role="main">
             
   <section id="module-graphnet.models.standard_model">
-<span id="standard-model"></span><h1 id="api-graphnet-models-standard-model--page-root">standard_model<a class="headerlink" href="#api-graphnet-models-standard-model--page-root" title="Permalink to this heading">¶</a></h1>
+<span id="graphnet-models-standard-model-module"></span><h1 id="api-graphnet-models-standard-model--page-root">graphnet.models.standard_model module<a class="headerlink" href="#api-graphnet-models-standard-model--page-root" title="Link to this heading">¶</a></h1>
 <p>Standard model class(es).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.standard_model.</span></span><span class="sig-name descname"><span class="pre">StandardModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gnn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tasks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coarsening</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer_class=&lt;class</span> <span class="pre">'torch.optim.adam.Adam'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer_kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler_kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler_config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="graphnet.models.model.html#graphnet.models.model.Model" title="graphnet.models.model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
-<p>Main class for standard models in graphnet.</p>
-<p>This class chains together the different elements of a complete GNN-based
-model (detector read-in, GNN architecture, and task-specific read-outs).</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">graphnet.models.standard_model.</span></span><span class="sig-name descname"><span class="pre">StandardModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="graphnet.models.easy_model.html#graphnet.models.easy_model.EasySyntax" title="graphnet.models.easy_model.EasySyntax"><code class="xref py py-class docutils literal notranslate"><span class="pre">EasySyntax</span></code></a></p>
+<p>A Standard way of combining model components in GraphNeT.</p>
+<p>This model is compatible with the vast majority of supervised learning
+tasks such as regression, binary and multi-label classification.</p>
+<p>Capable of producing both event-level and pulse-level predictions.</p>
 <p>Construct <cite>StandardModel</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>detector</strong> (<a class="reference internal" href="graphnet.models.detector.detector.html#graphnet.models.detector.detector.Detector" title="graphnet.models.detector.detector.Detector"><em>Detector</em></a>) – </p></li>
-<li><p><strong>gnn</strong> (<a class="reference internal" href="graphnet.models.gnn.gnn.html#graphnet.models.gnn.gnn.GNN" title="graphnet.models.gnn.gnn.GNN"><em>GNN</em></a>) – </p></li>
-<li><p><strong>tasks</strong> (<a class="reference internal" href="graphnet.models.task.task.html#graphnet.models.task.task.Task" title="graphnet.models.task.task.Task"><em>Task</em></a><em> | </em><em>List</em><em>[</em><a class="reference internal" href="graphnet.models.task.task.html#graphnet.models.task.task.Task" title="graphnet.models.task.task.Task"><em>Task</em></a><em>]</em>) – </p></li>
-<li><p><strong>coarsening</strong> (<a class="reference internal" href="graphnet.models.coarsening.html#graphnet.models.coarsening.Coarsening" title="graphnet.models.coarsening.Coarsening"><em>Coarsening</em></a><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>optimizer_class</strong> (<em>type</em>) – </p></li>
-<li><p><strong>optimizer_kwargs</strong> (<em>Dict</em><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>scheduler_class</strong> (<em>type</em><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>scheduler_kwargs</strong> (<em>Dict</em><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>scheduler_config</strong> (<em>Dict</em><em> | </em><em>None</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>)</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>)</p></li>
 </ul>
 </dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
+</dd>
 </dl>
-<dl class="py property">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.target_labels">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">target_labels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.target_labels" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return target label.</p>
-</dd></dl>
-<dl class="py property">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.prediction_labels">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prediction_labels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.prediction_labels" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return prediction labels.</p>
-</dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.configure_optimizers">
-<span class="sig-name descname"><span class="pre">configure_optimizers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.configure_optimizers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.configure_optimizers" title="Permalink to this definition">¶</a></dt>
-<dd><p>Configure the model’s optimizer(s).</p>
+<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.compute_loss">
+<span class="sig-name descname"><span class="pre">compute_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.compute_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.compute_loss" title="Link to this definition">¶</a></dt>
+<dd><p>Compute and sum losses across tasks.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>preds</strong> (<em>Tensor</em>)</p></li>
+<li><p><strong>data</strong> (<em>List</em><em>[</em><em>Data</em><em>]</em>)</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>)</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.forward" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.forward" title="Link to this definition">¶</a></dt>
 <dd><p>Forward pass, chaining model components.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span></code>]]</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span></code>]]</span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>data</strong> (<em>Data</em>) – </p>
+<dd class="field-even"><p><strong>data</strong> (<em>Data</em><em> | </em><em>List</em><em>[</em><em>Data</em><em>]</em>)</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.shared_step">
-<span class="sig-name descname"><span class="pre">shared_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.shared_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.shared_step" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">shared_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.shared_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.shared_step" title="Link to this definition">¶</a></dt>
 <dd><p>Perform shared step.</p>
 <p>Applies the forward pass and the following loss calculation, shared
 between the training and validation step.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>batch</strong> (<em>Data</em>) – </p></li>
-<li><p><strong>batch_idx</strong> (<em>int</em>) – </p></li>
+<li><p><strong>batch</strong> (<em>List</em><em>[</em><em>Data</em><em>]</em>)</p></li>
+<li><p><strong>batch_idx</strong> (<em>int</em>)</p></li>
 </ul>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.training_step">
-<span class="sig-name descname"><span class="pre">training_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.training_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.training_step" title="Permalink to this definition">¶</a></dt>
-<dd><p>Perform training step.</p>
+<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.validate_tasks">
+<span class="sig-name descname"><span class="pre">validate_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.validate_tasks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.validate_tasks" title="Link to this definition">¶</a></dt>
+<dd><p>Verify that self._tasks contain compatible elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>train_batch</strong> (<em>Data</em>) – </p></li>
-<li><p><strong>batch_idx</strong> (<em>int</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.validation_step">
-<span class="sig-name descname"><span class="pre">validation_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.validation_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.validation_step" title="Permalink to this definition">¶</a></dt>
-<dd><p>Perform validation step.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>val_batch</strong> (<em>Data</em>) – </p></li>
-<li><p><strong>batch_idx</strong> (<em>int</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.compute_loss">
-<span class="sig-name descname"><span class="pre">compute_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.compute_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.compute_loss" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute and sum losses across tasks.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>preds</strong> (<em>Tensor</em>) – </p></li>
-<li><p><strong>data</strong> (<em>Data</em>) – </p></li>
-<li><p><strong>verbose</strong> (<em>bool</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.inference">
-<span class="sig-name descname"><span class="pre">inference</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.inference" title="Permalink to this definition">¶</a></dt>
-<dd><p>Activate inference mode.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.train">
-<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.train"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.train" title="Permalink to this definition">¶</a></dt>
-<dd><p>Deactivate inference mode.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="graphnet.models.model.html#graphnet.models.model.Model" title="graphnet.models.model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>mode</strong> (<em>bool</em>) – </p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.predict">
-<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distribution_strategy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.predict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return predictions for <cite>dataloader</cite>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code>]</p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>dataloader</strong> (<em>DataLoader</em>) – </p></li>
-<li><p><strong>gpus</strong> (<em>List</em><em>[</em><em>int</em><em>] </em><em>| </em><em>int</em><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>distribution_strategy</strong> (<em>str</em><em> | </em><em>None</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="graphnet.models.standard_model.StandardModel.predict_as_dataframe">
-<span class="sig-name descname"><span class="pre">predict_as_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_columns</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_attributes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distribution_strategy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/graphnet/models/standard_model.html#StandardModel.predict_as_dataframe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#graphnet.models.standard_model.StandardModel.predict_as_dataframe" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return predictions for <cite>dataloader</cite> as a DataFrame.</p>
-<p>Include <cite>additional_attributes</cite> as additional columns in the output
-DataFrame.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
-</dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>dataloader</strong> (<em>DataLoader</em>) – </p></li>
-<li><p><strong>prediction_columns</strong> (<em>List</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – </p></li>
-<li><p><strong>node_level</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>additional_attributes</strong> (<em>List</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – </p></li>
-<li><p><strong>index_column</strong> (<em>str</em>) – </p></li>
-<li><p><strong>gpus</strong> (<em>List</em><em>[</em><em>int</em><em>] </em><em>| </em><em>int</em><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>distribution_strategy</strong> (<em>str</em><em> | </em><em>None</em>) – </p></li>
-</ul>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
 </dd>
 </dl>
 </dd></dl>
@@ -797,7 +643,7 @@ DataFrame.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="graphnet.models.model.html" title="model"
+            <a href="graphnet.models.standard_averaged_model.html" title="graphnet.models.standard_averaged_model module"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -806,17 +652,17 @@ DataFrame.</p>
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> model </span>
+                      class="md-footer-nav__direction"> "Previous" </span> graphnet.models.standard_averaged_model module </span>
               </div>
             </a>
           
           
-            <a href="graphnet.models.utils.html" title="utils"
+            <a href="graphnet.models.utils.html" title="graphnet.models.utils module"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> utils </span>
+                class="md-footer-nav__direction"> "Next" </span> graphnet.models.utils module </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
@@ -830,11 +676,11 @@ DataFrame.</p>
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           <div class="md-footer-copyright__highlight">
-              &#169; Copyright 2021-2023, GraphNeT team.
+              &#169; Copyright 2021-2024, GraphNeT team.
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

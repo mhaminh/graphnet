@@ -1,0 +1,7 @@
+graphnet.data.datamodule module
+===============================
+
+.. automodule:: graphnet.data.datamodule
+   :members:
+   :undoc-members:
+   :show-inheritance:

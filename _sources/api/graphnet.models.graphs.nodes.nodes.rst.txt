@@ -1,0 +1,7 @@
+graphnet.models.graphs.nodes.nodes module
+=========================================
+
+.. automodule:: graphnet.models.graphs.nodes.nodes
+   :members:
+   :undoc-members:
+   :show-inheritance:
